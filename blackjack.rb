@@ -3,7 +3,6 @@ require_relative "deck"
 require_relative "hand"
 require_relative "card"
 
-
 SUITS = ["♠", "♥", "♦", "♣"]
 VALUES = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"]
 
