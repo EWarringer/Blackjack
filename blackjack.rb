@@ -15,8 +15,6 @@ player.deal!
 puts "\nPLAYER SCORE: #{player.total}"
 player.choice
 
-sleep(1)
-
 dealer.deal!
 
 until dealer.total > 16
@@ -30,14 +28,10 @@ else
   puts "\nDEALER SCORE: #{dealer.total}"
 end
 
-
 if (player.total > 21 || dealer.total > player.total) && dealer.total < 22
-  sleep(0.5)
   puts "\nDealer Wins!"
 elsif (dealer.total > 21 || player.total > dealer.total) && player.total < 22
-  sleep(0.5)
   puts "\nPlayer Wins!"
 else
-  sleep(0.5)
   puts "\ndraw"
 end
